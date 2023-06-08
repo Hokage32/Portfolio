@@ -25,7 +25,7 @@ const Header = () => {
           <motion.li  whileHover={{ scale: 1.2 }}>Projects</motion.li>
         </Link>
 
-       
+      
       </nav>
     </header>
   );
