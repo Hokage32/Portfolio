@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const Header = () => {
   return (
@@ -14,14 +15,14 @@ const Header = () => {
 
       <nav className="paths">
         <Link to={"/"} style={{ textDecoration: "none", color: "black" }}>
-          <li>Home</li>
+          <motion.li  whileHover={{ scale: 1.2 }}>Home</motion.li>
         </Link>
 
         <Link
           to={"/projects"}
           style={{ textDecoration: "none", color: "black" }}
         >
-          <li>Projects</li>
+          <motion.li  whileHover={{ scale: 1.2 }}>Projects</motion.li>
         </Link>
 
        
