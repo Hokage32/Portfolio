@@ -43,7 +43,7 @@ const Home = () => {
 
                   <h3>Leviraoelina34@gmail.com</h3>
                 </div>
-                <img src={Self} alt="" />
+                
               </div>
             </div>
           </div>

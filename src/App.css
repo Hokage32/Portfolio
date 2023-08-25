@@ -1,127 +1,116 @@
-*{
-  
+/* Apply a mobile-first approach by targeting smaller screens first */
+/* You can adjust the media query breakpoints as needed */
+
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-  background-color: #D2DAEE;
+
+body {
+  background-color: #d2daee;
   color: black;
-  font-family: 'Raleway',sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 600;
   text-decoration: none;
-  padding: 50px;
-  
-  
+  padding: 20px; /* Reduce padding for smaller screens */
 }
-li{
+
+li {
   list-style-type: none;
   text-decoration: none;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem; /* Adjust spacing */
 }
-.spline{
-  width: 800px;
-  height: 600px;
 
+.spline {
+  max-width: 100%; /* Make sure it fits the screen */
+  height: auto; /* Maintain aspect ratio */
 }
-header{
+
+header {
   display: flex;
   justify-content: space-between;
-  
+  padding: 10px; /* Adjust padding */
 }
 
-iframe{
+iframe {
   border-radius: 20px;
-  object-fit: cover;
+  width: 100%; /* Make sure it's responsive */
+  height: auto; /* Maintain aspect ratio */
 }
 
-
-.myName{
-  font-size: 60px;
+.myName {
+  font-size: 36px; /* Adjust font size for smaller screens */
   font-weight: 900;
-  margin: -0.1em 0 0 -0.04em;
+  margin: 0;
 }
-.myTitle{
+
+.myTitle {
   margin-top: 5px;
   font-weight: 800;
 }
 
-.home-intro-box{
+.home-intro-box {
   display: flex;
-  height: 100vh;
-  width: 100vw;
+  flex-direction: column; /* Stack elements on smaller screens */
   align-items: center;
-  text-align: left;
-  
-  
+  text-align: center; /* Center text */
+  padding: 20px; /* Adjust padding */
 }
 
-.home-intro{
-  display: flex;
-  flex-direction: column;
-
+.home-intro {
+  /* Remove unnecessary flex properties */
 }
 
-.projects{
-  display: flex;
-  flex-direction: column;
-  
-  align-items: center;
+.projects {
+  /* Remove unnecessary flex properties */
 }
 
-.projects-box iframe{
-  object-fit: cover;
+.projects-box iframe {
   width: 100%;
-
+  height: auto; /* Maintain aspect ratio */
 }
-.projects-box{
-  display: flex;
-  flex-direction: column;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  justify-content: center;
-  align-items: center;
-  padding:50px ;
+
+.projects-box {
+  margin-top: 1rem; /* Adjust margin */
+  margin-bottom: 1rem; /* Adjust margin */
+  padding: 20px; /* Adjust padding */
   font-weight: bold;
-  width: 500px;
-  background-color: #D2DAEE;
-  box-shadow: 3px 3px 10px rgb(49, 49, 49) ;
+  width: 100%; /* Use full width */
+  box-shadow: 3px 3px 10px rgb(49, 49, 49);
   border-radius: 20px;
 }
-.project-title{
+
+.project-title {
   font-weight: 900;
-  font-size: 30px;
+  font-size: 24px; /* Adjust font size for smaller screens */
 }
 
-.description-box{
-  display: flex;
-  justify-content: center;
-  width: 100vw;
-  height: 100vh;
+.description-box {
+  /* Remove unnecessary styles */
 }
 
-.about-description{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2rem;
+.about-description {
+  margin-top: 1rem; /* Adjust margin */
   border-radius: 20px;
-  box-shadow: 3px 3px 10px rgb(49, 49, 49) ;
-  width: 900px;
-  height: 600px;
-  padding: 25px;
+  box-shadow: 3px 3px 10px rgb(49, 49, 49);
+  width: 100%; /* Use full width */
+  padding: 15px; /* Adjust padding */
 }
 
-.socials img{
-  width: 29%;
- 
+.socials img {
+  max-width: 100%;
 }
-.socials{
-  width: 100%;
-  height: 50%;
-  
+
+.socials {
+  /* Adjust height or remove if not necessary */
 }
-.socials-box{
+
+.socials-box {
   display: flex;
-  justify-content: space-between;
-  align-items: end;
-  padding: 25px;
+  flex-direction: column; /* Stack social icons */
+  align-items: center;
+  margin-top: 1rem; /* Adjust margin */
+  padding: 15px; /* Adjust padding */
 }
