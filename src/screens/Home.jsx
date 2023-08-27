@@ -4,11 +4,12 @@ import linkedin from "../images/linkedin.svg";
 import github from "../images/github.svg";
 import { motion } from "framer-motion";
 import Rengoku from "../images/Rengoku.png";
-import Gojo from '../images/Gojo.svg'
+import Gojo from '../images/Gojo.png'
 
 const Home = () => {
   return (
     <div className="home-intro-box">
+      <img src={Gojo} alt="" className="gojo"/>
       <div className="home-intro">
         <div className="description-box">
           <div className="about-description">
