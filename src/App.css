@@ -135,3 +135,16 @@ iframe{
   padding: 15px; /* Adjust padding */
 }
 
+.animeBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  
+  
+}
+ .rengoku{
+  width: 400px;
+  height: 400px;
+  margin-top: 10px;
+}

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import linkedin from "../images/linkedin.svg";
 import github from "../images/github.svg";
 import { motion } from "framer-motion";
-import Rengoku from "../images/Rengoku.svg";
+import Rengoku from "../images/Rengoku.png";
 import Gojo from '../images/Gojo.svg'
 
 const Home = () => {
@@ -53,7 +53,7 @@ const Home = () => {
     <div className="anime">
 
       <img src={Rengoku} alt="" className="rengoku"/>
-      <img src={Gojo} alt="" className="rengoku"/>
+      
     </div>
     </div>
     </div>
