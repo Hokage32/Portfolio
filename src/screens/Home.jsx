@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import linkedin from "../images/linkedin.svg";
 import github from "../images/github.svg";
 import { motion } from "framer-motion";
-import Self from "../images/Self.jpeg";
+import Rengoku from "../images/Rengoku.svg";
+import Gojo from '../images/Gojo.svg'
 
 const Home = () => {
   return (
@@ -14,7 +15,7 @@ const Home = () => {
             <h2 className="project-title">
               Hey, I'm Levi. A developer with a love for design and creativity.
             </h2>
-            
+
             <h3>
               I can learn just about anything, and I enjoy learning and gaining
               inspiration from others.
@@ -43,12 +44,18 @@ const Home = () => {
 
                   <h3>Leviraoelina34@gmail.com</h3>
                 </div>
-                
               </div>
             </div>
           </div>
         </div>
       </div>
+      <div className="animeBox">
+    <div className="anime">
+
+      <img src={Rengoku} alt="" className="rengoku"/>
+      <img src={Gojo} alt="" className="rengoku"/>
+    </div>
+    </div>
     </div>
   );
 };

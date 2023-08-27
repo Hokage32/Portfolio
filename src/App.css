@@ -23,10 +23,6 @@ li {
   margin-bottom: 0.5rem; /* Adjust spacing */
 }
 
-.spline {
-  max-width: 100%; /* Make sure it fits the screen */
-  height: auto; /* Maintain aspect ratio */
-}
 
 header {
   display: flex;
@@ -36,8 +32,7 @@ header {
 
 iframe {
   border-radius: 20px;
-  width: 100%; /* Make sure it's responsive */
-  height: auto; /* Maintain aspect ratio */
+  object-fit: cover;
 }
 
 .myName {
@@ -62,25 +57,50 @@ iframe {
 .home-intro {
   /* Remove unnecessary flex properties */
 }
-
-.projects {
-  /* Remove unnecessary flex properties */
+@media only screen and (min-width: 1200px){
+  .projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+}
 }
 
-.projects-box iframe {
-  width: 100%;
-  height: auto; /* Maintain aspect ratio */
-}
+
 
 .projects-box {
-  margin-top: 1rem; /* Adjust margin */
-  margin-bottom: 1rem; /* Adjust margin */
-  padding: 20px; /* Adjust padding */
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
   font-weight: bold;
-  width: 100%; /* Use full width */
+  background-color: #D2DAEE;
   box-shadow: 3px 3px 10px rgb(49, 49, 49);
   border-radius: 20px;
 }
+
+@media screen and (min-width: 768px) {
+  .projects-box {
+    width: 600px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .projects-box {
+    width: 100%;
+    max-width: 400px;
+  }
+iframe{
+  width: auto;
+  object-fit: cover;
+}
+}
+
 
 .project-title {
   font-weight: 900;
@@ -114,3 +134,4 @@ iframe {
   margin-top: 1rem; /* Adjust margin */
   padding: 15px; /* Adjust padding */
 }
+
