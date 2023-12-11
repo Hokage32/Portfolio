@@ -76,7 +76,7 @@ const Home = () => {
  
 </Splide>
 
-<motion.div animate={{x:[-200,0,0]}}>
+<motion.div animate={{x:[300,0,0]}}>
   <img src={Gojo} alt="" className="gojo"/>
 </motion.div>
 <motion.div animate={{x:[-300,0,0]}}>
