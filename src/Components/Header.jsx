@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { Sling as Hamburger } from 'hamburger-react'
 
 const Header = () => {
   return (
@@ -10,7 +11,7 @@ const Header = () => {
         <Link to={"/"} style={{ textDecoration: "none", color: "black" }}>
           <h1 className="myName">Levi Raoelina</h1>
         </Link>
-        <p className="myTitle">Front end developer </p>
+        <p className="myTitle">Full stack developer </p>
       </nav>
 
       <nav className="paths">

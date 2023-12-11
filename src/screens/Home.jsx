@@ -5,11 +5,13 @@ import github from "../images/github.svg";
 import { motion } from "framer-motion";
 import Rengoku from "../images/Rengoku.png";
 import Gojo from '../images/Gojo.png'
+import { Splide, SplideSlide,SplideTrack } from "@splidejs/react-splide";
+import '@splidejs/react-splide/css'
 
 const Home = () => {
   return (
     <div className="home-intro-box">
-      <img src={Gojo} alt="" className="gojo"/>
+      {/* <img src={Gojo} alt="" className="gojo"/>
       <div className="home-intro">
         <div className="description-box">
           <div className="about-description">
@@ -56,8 +58,32 @@ const Home = () => {
       <img src={Rengoku} alt="" className="rengoku"/>
       
     </div>
+    </div> */}
+<Splide options={{pagination: false}} aria-label="My Favorite Images">
+  
+  
+  <SplideSlide>
+   <h1>Hi, I'm Levi!</h1>
+   
+  </SplideSlide>
+  
+  <SplideSlide>
+    <h1>A full stack developer with a love of anime</h1>
+  </SplideSlide>
+  <SplideSlide>
+    <h1>Let's work together!</h1>
+  </SplideSlide>
+ 
+</Splide>
+
+<motion.div animate={{x:[-200,0,0]}}>
+  <img src={Gojo} alt="" className="gojo"/>
+</motion.div>
+<motion.div animate={{x:[-300,0,0]}}>
+<img src={Rengoku} alt="" className="rengoku"/>
+</motion.div>
     </div>
-    </div>
+
   );
 };
 
