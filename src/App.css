@@ -4,18 +4,21 @@
 /* Reset some default styles */
 * {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
   color: azure;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
 }
 
 body {
-  background-color: rgb(99, 99, 99);
- 
+  background-color: #2f2f35;
+  background-image: linear-gradient(43deg, #2f2f35 0%, #564c55 53%, #94630a 100%);
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
   text-decoration: none;
-  padding: 20px; /* Reduce padding for smaller screens */
+  padding: 20px;
 }
 
 li {
@@ -55,95 +58,34 @@ iframe {
   padding: 20px; /* Adjust padding */
 }
 
-.home-intro {
-  /* Remove unnecessary flex properties */
-}
-@media only screen and (min-width: 1200px){
-  .projects{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  
-}
-}
 
 
 
-.projects-box {
-  display: flex;
-  flex-direction: column;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  font-weight: bold;
-  background-color: #D2DAEE;
-  box-shadow: 3px 3px 10px rgb(49, 49, 49);
-  border-radius: 20px;
-}
 
-@media screen and (min-width: 768px) {
-  .projects-box {
-    width: 600px;
-    height: auto;
-  }
-}
+
+
 
 @media screen and (max-width: 767px) {
-  .projects-box {
-    width: 100%;
-    max-width: 400px;
-  }
+  
 iframe{
   width: auto;
   object-fit: cover;
 }
+.project-info{
+  width: 400px;
+  text-align: center;
+}
 }
 
 
-.project-title {
-  font-weight: 900;
-  font-size: 24px; /* Adjust font size for smaller screens */
-}
-
-.description-box {
-  /* Remove unnecessary styles */
-}
-
-.about-description {
-  margin-top: 1rem; /* Adjust margin */
-  border-radius: 20px;
-  box-shadow: 3px 3px 10px rgb(49, 49, 49);
-  width: 100%; /* Use full width */
-  padding: 15px; /* Adjust padding */
-}
-
-.socials img {
-  max-width: 100%;
-}
-
-.socials {
-  /* Adjust height or remove if not necessary */
-}
-
-.socials-box {
+.project-container{
   display: flex;
-  flex-direction: column; /* Stack social icons */
-  align-items: center;
-  margin-top: 1rem; /* Adjust margin */
-  padding: 15px; /* Adjust padding */
-}
-
-.animeBox{
-  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100vw;
-  
-  
 }
+
+
  .rengoku{
   width: 400px;
   height: 400px;

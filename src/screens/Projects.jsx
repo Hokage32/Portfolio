@@ -1,36 +1,52 @@
-import React from 'react'
+import React from "react";
+import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 
 const Projects = () => {
   return (
-    <div className='projects'>
-        <div className='projects-box'>
-             <iframe width="560" height="315" src="https://www.youtube.com/embed/wjRuJFZmRao" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            
-            
-            <h2 className='project-title'>Strawberry</h2>
-            <h4>React | Javascript | Framer Motion | CSS | PostgreSQL</h4>
-            <p>Strawberry is a site where users can search through a collection of games and add games they wish to play to a playlist.</p>
-           
-        </div>
+    <div>
+      <Splide aria-label="projects" className="project-container">
+        <SplideSlide className="project-container">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/wjRuJFZmRao"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <div className="project-info">
+          <h1 className="project-title">Strawberry</h1>
+          <br />
+          <h3>React | Javascript | Node.JS | CSS | PostgreSQL</h3>
+          <br />
+          <p>
+            Strawberry is a site where users can search through a collection of
+            games and add games they wish to play to a playlist.
+          </p></div>
+        </SplideSlide>
 
-
-        <div className='projects-box'>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/lpd6vWmXVVM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <h2 className='project-title'>Macronutrient Calculator</h2>
-            <h4>Javascript | CSS | HTML | PostgreSQL</h4>
-            <p>App where users can input information such as weight, desired goal, and activity level, and they can then see the amount of calories and macronutrients they need to consume to reach selected goal.</p>
-            
-
-        </div>
-
-
-
-
-
-
-
+        <SplideSlide className="project-container">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/lpd6vWmXVVM"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <h1 className="project-title">Macronutrient Calculator</h1>
+          <br />
+          <h3>Javascript | CSS | HTML | PostgreSQL</h3>
+          <br />
+          <div className="project-info">
+          <p>Users can enter information to find caloric needs.</p>
+          </div>
+        </SplideSlide>
+      </Splide>
     </div>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;
