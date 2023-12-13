@@ -1,12 +1,23 @@
 import React from "react";
-
+import { useState } from "react";
 import { motion } from "framer-motion";
 import Rengoku from "../images/Rengoku.png";
 import Gojo from '../images/Gojo.png'
+import Tanjiro from '../images/Tanjiro.png'
+import Inosuke from '../images/Inosuke.png'
+import Zenetsu from '../images/Zenetsu.png'
 import { Splide, SplideSlide,SplideTrack } from "@splidejs/react-splide";
 import '@splidejs/react-splide/css'
 
 const Home = () => {
+const [hover, setHover] = useState(false)
+const handleHover = () => {
+setHover(!hover)
+}
+
+
+
+
   return (
     <div className="home-intro-box">
     
@@ -38,12 +49,17 @@ const Home = () => {
 </Splide>
 
 <motion.div animate={{x:[300,0,0]}}
-transition={{ease:"circOut", duration:2}}>
-  <img src={Gojo} alt="" className="gojo"/>
+transition={{ease:"circOut", duration:2}}
+
+>
+  <motion.img src={Inosuke} alt="" className="gojo" whileHover={{rotate:360}}/>
+  <motion.img src={Tanjiro} alt="" className="gojo" whileHover={{rotate:360}}/>
+  <motion.img src={Zenetsu} alt="" className="gojo" whileHover={{rotate:360}}/>
 </motion.div>
 <motion.div animate={{x:[100,0,0]}}
 transition={{ease:"easeOut", duration:2}}>
 <img src={Rengoku} alt="" className="rengoku"/>
+
 </motion.div>
     </div>
 
