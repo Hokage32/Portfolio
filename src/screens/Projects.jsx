@@ -4,7 +4,7 @@ import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 const Projects = () => {
   return (
     <div>
-      <Splide aria-label="projects" className="project-container">
+      <Splide aria-label="projects" className="splide-container">
         <SplideSlide className="project-container">
           <iframe
             width="560"
