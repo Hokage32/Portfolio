@@ -56,11 +56,11 @@ transition={{ease:"circOut", duration:2}}
   <motion.img src={Tanjiro} alt="" className="gojo" whileHover={{rotate:360}}/>
   <motion.img src={Zenetsu} alt="" className="gojo" whileHover={{rotate:360}}/>
 </motion.div>
-<motion.div animate={{x:[100,0,0]}}
+{/* <motion.div animate={{x:[100,0,0]}}
 transition={{ease:"easeOut", duration:2}}>
 <img src={Rengoku} alt="" className="rengoku"/>
 
-</motion.div>
+</motion.div> */}
     </div>
 
   );
