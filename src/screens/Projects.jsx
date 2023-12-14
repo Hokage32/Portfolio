@@ -24,6 +24,7 @@ const Projects = () => {
             Strawberry is a site where users can search through a collection of
             games and add games they wish to play to a playlist.
           </p></div>
+          <br />
         </SplideSlide>
 
         <SplideSlide className="project-container">

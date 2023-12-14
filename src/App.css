@@ -75,7 +75,9 @@ iframe{
   width: 300px;
   text-align: center;
 }
-
+.about-me{
+  width:auto
+}
 
 }
 
@@ -88,12 +90,9 @@ iframe{
 }
 
 
- .rengoku{
-  width: 300px;
-  height: 300px;
-  margin-top: 10px;
-}
+ 
 .gojo{
   width: 100px;
   height: 100px;
+  filter: drop-shadow(3px 3px #0a0808);
 }

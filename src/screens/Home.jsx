@@ -21,16 +21,18 @@ setHover(!hover)
   return (
     <div className="home-intro-box">
     
-<Splide options={{pagination: false}} aria-label="about-me">
+<Splide options={{pagination: true}} aria-label="about-me">
   
   
   <SplideSlide>
-   <h2>Hi, I'm Levi!</h2>
+   <h2>Hi, I'm Levi.</h2>
    
   </SplideSlide>
   
   <SplideSlide>
-    <h2>A full stack developer with a love of anime</h2>
+    <div className="about-me">
+    <h2>I'm a full stack developer with a love of anime.</h2>
+    </div>
   </SplideSlide>
   <SplideSlide>
     <h2>Let's work together!</h2>
@@ -43,6 +45,7 @@ setHover(!hover)
   <li>CSS</li>
   <li>Node.js</li>
   <li>Express</li>
+  <br />
   
  </SplideSlide>
 </Splide>
