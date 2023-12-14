@@ -41,7 +41,6 @@ setHover(!hover)
   <li>JavaScript</li>
   <li>React</li>
   <li>CSS</li>
-  <li>AWS</li>
   <li>Node.js</li>
   <li>Express</li>
   
@@ -56,11 +55,7 @@ transition={{ease:"circOut", duration:2}}
   <motion.img src={Tanjiro} alt="" className="gojo" whileHover={{rotate:360}}/>
   <motion.img src={Zenetsu} alt="" className="gojo" whileHover={{rotate:360}}/>
 </motion.div>
-{/* <motion.div animate={{x:[100,0,0]}}
-transition={{ease:"easeOut", duration:2}}>
-<img src={Rengoku} alt="" className="rengoku"/>
 
-</motion.div> */}
     </div>
 
   );
