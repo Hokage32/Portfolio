@@ -1,16 +1,11 @@
-/* Apply a mobile-first approach by targeting smaller screens first */
-/* You can adjust the media query breakpoints as needed */
 
-/* Reset some default styles */
 * {
   margin: 0;
   color: azure;
   box-sizing: border-box;
 }
 
-html, body {
-  height: 100%;
-}
+
 
 body {
   background-color: #2f2f35;
@@ -18,7 +13,7 @@ body {
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
   text-decoration: none;
-  padding: 20px;
+  
 }
 
 li {
@@ -55,7 +50,7 @@ iframe {
   flex-direction: column; /* Stack elements on smaller screens */
   align-items: center;
   text-align: center; /* Center text */
-  padding: 20px; /* Adjust padding */
+
 }
 
 
@@ -95,4 +90,8 @@ iframe{
   width: 100px;
   height: 100px;
   filter: drop-shadow(3px 3px #0a0808);
+}
+
+.selfie{
+  object-fit: contain;
 }

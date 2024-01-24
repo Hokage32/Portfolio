@@ -1,44 +1,26 @@
 import React from "react";
 import { useState } from "react";
-import { motion} from "framer-motion";
+import { motion } from "framer-motion";
 
 import Tanjiro from "../images/Tanjiro.png";
 import Inosuke from "../images/Inosuke.png";
 import Zenetsu from "../images/Zenetsu.png";
-import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
+import Selfie from "../images/Selfie.jpeg"
 import "@splidejs/react-splide/css";
 
 const Home = () => {
   return (
-    
-    <div 
-    className="home-intro-box"
-
-    >
-      <Splide options={{ pagination: true }} aria-label="about-me">
-        <SplideSlide>
-          <h2>Hi, I'm Levi.</h2>
-        </SplideSlide>
-
-        <SplideSlide>
-          <div className="about-me">
-            <h2>I'm a full stack developer with a love of anime.</h2>
-          </div>
-        </SplideSlide>
-        <SplideSlide>
-          <h2>Let's work together!</h2>
-        </SplideSlide>
-        <SplideSlide>
-          <h2 style={{ textDecorationLine: "underline" }}>Skillset</h2>
-          <p></p>
-          <li>JavaScript</li>
-          <li>React</li>
-          <li>CSS</li>
-          <li>Node.js</li>
-          <li>Express</li>
-          <br />
-        </SplideSlide>
-      </Splide>
+    <div className="home-intro-box">
+     <div className="hero min-h-screen ">
+  <div className="hero-content flex-col justify-center lg:flex-row" >
+    <img src={Selfie} className="max-w-sm rounded-lg shadow-2xl" />
+    <div>
+      <h1 className="text-5xl font-bold">Hello, I'm Levi!</h1>
+      <p className="py-6">I am a full stack developer with a love for anime! The tech I primarily work with are JavaScript, React, Nodejs, Expressjs, and Tailwindcss. I would love to work with everyone and anyone, lets connect!</p>
+      <button className="btn btn-primary">Projects</button>
+    </div>
+  </div>
+</div>
 
       <motion.div
         animate={{ x: [300, 0, 0] }}

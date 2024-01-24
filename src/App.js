@@ -5,6 +5,7 @@ import Projects from "./screens/Projects";
 import Contact from "./screens/Contact";
 import Header from "./Components/Header";
 import AnimatedRoutes from "./Components/AnimatedRoutes";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -12,6 +13,8 @@ function App() {
       <Header />
 
       <AnimatedRoutes />
+
+      <Footer/>
     </div>
   );
 }
