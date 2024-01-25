@@ -1,16 +1,14 @@
-
 * {
   margin: 0;
   color: azure;
   box-sizing: border-box;
 }
-html,body
-{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  overflow-x: hidden; 
 }
 
 body {
@@ -19,21 +17,18 @@ body {
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
   text-decoration: none;
-  width: auto;
-  
 }
 
 li {
   list-style-type: none;
   text-decoration: none;
-  margin-bottom: 0.5rem; /* Adjust spacing */
+  margin-bottom: 0.5rem;
 }
-
 
 header {
   display: flex;
   justify-content: space-between;
-  padding: 10px; /* Adjust padding */
+  padding: 10px;
 }
 
 iframe {
@@ -42,7 +37,7 @@ iframe {
 }
 
 .myName {
-  font-size: 36px; /* Adjust font size for smaller screens */
+  font-size: 36px;
   font-weight: 900;
   margin: 0;
 }
@@ -54,51 +49,43 @@ iframe {
 
 .home-intro-box {
   display: flex;
-  flex-direction: column; /* Stack elements on smaller screens */
+  flex-direction: column;
   align-items: center;
-  text-align: center; /* Center text */
+  text-align: center;
 
+  @media screen and (max-width: 767px) {
+    width: 100vw;
+  }
 }
-
-
-
-
-
-
-
 
 @media screen and (max-width: 767px) {
-  
-iframe{
-  width: auto;
-  object-fit: cover;
-}
-.project-info{
-  width: 300px;
-  text-align: center;
-}
-.about-me{
-  width:auto
+  .myName {
+    font-size: 24px;
+  }
+
+  .project-info, .about-me {
+    width: 100%;
+  }
+
+  iframe {
+    width: auto;
+    object-fit: cover;
+  }
+
+  .gojo {
+    width: 80px;
+    height: 80px;
+    filter: drop-shadow(3px 3px #0a0808);
+  }
 }
 
-}
-
-
-.project-container{
+.project-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-
- 
-.gojo{
-  width: 100px;
-  height: 100px;
-  filter: drop-shadow(3px 3px #0a0808);
-}
-
-.selfie{
+.selfie {
   object-fit: contain;
 }
