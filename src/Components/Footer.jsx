@@ -3,14 +3,10 @@ import React from "react";
 const Footer = () => {
   return (
     <div>
-      <footer className="footer p-10 bg-neutral text-neutral-content w-screen">
+      <footer className="footer p-10 bg-neutral text-neutral-content w-screen static bottom-0">
         <aside>
       
-          <p>
-            ACME Industries Ltd.
-            <br />
-            Providing reliable tech since 1992
-          </p>
+          
         </aside>
         <nav>
           <header className="footer-title">Social</header>
