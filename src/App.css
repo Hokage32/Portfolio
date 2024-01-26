@@ -9,6 +9,7 @@ html, body {
   height: 100%;
   margin: 0px;
   overflow-x: hidden; 
+
 }
 
 body {
@@ -57,7 +58,11 @@ iframe {
     width: 100vw;
   }
 }
-
+.gojo{
+  width: 200px;
+  height: 200px;
+  filter: drop-shadow(3px 3px #0a0808);
+}
 @media screen and (max-width: 767px) {
   .myName {
     font-size: 24px;
@@ -79,6 +84,11 @@ iframe {
   }
 }
 
+.heads{
+  display: flex;
+  gap: 25px;
+}
+
 .project-container {
   display: flex;
   flex-direction: column;
@@ -89,3 +99,4 @@ iframe {
 .selfie {
   object-fit: contain;
 }
+
