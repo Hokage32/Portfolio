@@ -16,7 +16,7 @@ const Home = () => {
   
   
   return (
-    <div className="home-intro-box">
+    <div className="home-intro-box relative z-0">
       <div className="hero min-h-screen ">
         <div className="hero-content flex-col justify-center lg:flex-row">
           <img
