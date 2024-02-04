@@ -11,7 +11,7 @@ const Header = () => {
   };
   return hamburger ? (
     <div className="hamburger-menu-container flex flex-col items-center w-screen h-20 relative z-50">
-      <div className="hamburger-menu flex flex-col justify-center items-center w-96 h-96  bg-gray-500 bg-opacity-75 relative z-50  p-6 ">
+      <div className="hamburger-menu flex flex-col justify-center items-center w-96 h-96  bg-gray-500 bg-opacity-75 relative z-50  p-6 rounded-bl-3xl rounded-br-3xl ">
         <button>Contact</button>
         <button>Projects</button>
 
