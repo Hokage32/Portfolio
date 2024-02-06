@@ -11,10 +11,11 @@ function App() {
   return (
     <div className="App">
       <Header />
-
+      <br />
       <AnimatedRoutes />
+      <br />
 
-      <Footer/>
+      <Footer />
     </div>
   );
 }
