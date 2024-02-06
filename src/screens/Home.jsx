@@ -29,7 +29,7 @@ const Home = () => {
           <div className="me">
             <h1 className="text-7xl  font-bold">Hello, I'm Levi!</h1>
             <p className="text-3xl py-6 lg:py-6">
-              I am a full stack developer with a love for anime! The tech I
+              I am a full stack developer! The tech I
               primarily work with is JavaScript, React, Nodejs, Expressjs, and
               Tailwindcss. I would love to work with everyone and anyone, let's
               connect!
@@ -39,30 +39,6 @@ const Home = () => {
         </div>
       </div>
 
-      <motion.div
-        animate={{ x: [300, 0, 0] }}
-        transition={{ ease: "circOut", duration: 2 }}
-        className="heads"
-      >
-        <motion.img
-          src={Inosuke}
-          alt=""
-          className="gojo"
-          whileHover={{ rotate: 360 }}
-        />
-        <motion.img
-          src={Tanjiro}
-          alt=""
-          className="gojo"
-          whileHover={{ rotate: 360 }}
-        />
-        <motion.img
-          src={Zenetsu}
-          alt=""
-          className="gojo"
-          whileHover={{ rotate: 360 }}
-        />
-      </motion.div>
       <br />
       <div className="flex flex-col gap-20">
       <div>
@@ -110,30 +86,7 @@ const Home = () => {
           </div>
         </div>
 
-        <motion.div
-        animate={{ x: [300, 0, 0] }}
-        transition={{ ease: "circOut", duration: 2 }}
-        className="heads flex justify-center"
-      >
-        <motion.img
-          src={Giyu}
-          alt=""
-          className="gojo"
-          whileHover={{ rotate: 360 }}
-        />
-        <motion.img
-          src={Shinobu}
-          alt=""
-          className="gojo"
-          whileHover={{ rotate: 360 }}
-        />
-        <motion.img
-          src={Gyomei}
-          alt=""
-          className="gojo"
-          whileHover={{ rotate: 360 }}
-        />
-      </motion.div>
+       
       </div>
     </div>
   );
