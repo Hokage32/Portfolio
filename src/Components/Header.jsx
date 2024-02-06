@@ -15,7 +15,7 @@ const Header = () => {
       initial={{ opacity: 0, y: "-100%" }}
       animate={{ opacity: hamburger ? 1 : 0, y: hamburger ? 0 : "-100%" }}
       transition={{ duration: 0.5 }}
-       className="hamburger-menu flex flex-col justify-center items-center w-96 h-96  bg-gray-500 bg-opacity-75 relative z-50  p-6 rounded-bl-3xl rounded-br-3xl ">
+       className="hamburger-menu flex flex-col justify-center items-center w-96 h-64  bg-gray-500 bg-opacity-75 relative z-50  p-6 rounded-bl-3xl rounded-br-3xl ">
         <button>Contact</button>
         <button>Projects</button>
 
