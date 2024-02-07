@@ -6,10 +6,10 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div>
-      <footer className="footer p-10 bg-neutral text-neutral-content w-screen static bottom-0">
+      <footer className="flex justify-center text-center footer p-10 bg-neutral text-neutral-content w-screen static bottom-0 text-2xl">
         <div>
           <h1>Socials</h1>
-          <div>
+          <div className="flex gap-3 justify-center ">
             <Link to={'https://www.linkedin.com/in/levi-raoelina-71a96326b/'}>
               <img src={LinkedIn} alt="" />
             </Link>

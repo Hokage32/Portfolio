@@ -27,10 +27,9 @@ const Home = () => {
           <div className="lg:ml-8">
         
           <div className="me">
-            <h1 className="text-7xl  font-bold">Hello, I'm Levi!</h1>
-            <p className="text-3xl py-6 lg:py-6">
-              I am a full stack developer! The tech I
-              primarily work with is JavaScript, React, Nodejs, Expressjs, and
+            <h1 className="text-7xl  font-bold text-left">Hello, I'm Levi!</h1>
+            <p className="text-3xl py-6 lg:py-6 text-left">
+              A full stack developer who works with JavaScript, React, Nodejs, Expressjs, and
               Tailwindcss. I would love to work with everyone and anyone, let's
               connect!
             </p>
